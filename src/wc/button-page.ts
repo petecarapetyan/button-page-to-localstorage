@@ -11,10 +11,13 @@ declare global {
 @customElement('button-page')
 export class ButtonPageElement extends LitElement {
 
+  private _onClick() {
+    alert("clicked")
+  }
 
   render() {
     return html`
-    <p> nu component</p>
+    <button @click=${this._onClick}>+</button>
     `
   }
 
