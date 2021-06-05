@@ -68,6 +68,6 @@ let FixMeElement = class FixMeElement extends h {
     }
 };
 FixMeElement = __decorate([
-    n('fix-me')
+    n('button-page')
 ], FixMeElement);
 //# sourceMappingURL=fixme.js.map

@@ -4,12 +4,12 @@ import {customElement} from 'lit/decorators.js';
 
 declare global {
   interface HTMLElementTagNameMap {
-    'fix-me': FixMeElement
+    'button-page': ButtonPageElement
   }
 }
 
-@customElement('fix-me')
-export class FixMeElement extends LitElement {
+@customElement('button-page')
+export class ButtonPageElement extends LitElement {
 
 
   render() {
