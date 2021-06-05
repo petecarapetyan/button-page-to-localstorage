@@ -12,7 +12,10 @@ declare global {
 export class ButtonPageElement extends LitElement {
 
   private _onClick() {
-    alert("clicked")
+    // localStorage.clear()
+    const key = "page_clicked_" + new Date().getTime()
+    localStorage.setItem(key, window.location.pathname)
+    // alert(localStorage.key(localStorage.length - 1)+"="+window.location.pathname)
   }
 
   render() {
