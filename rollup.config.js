@@ -3,7 +3,7 @@
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 
-const targetDir = process.env.BUTTON_PAGE_DIR && process.env.BUTTON_PAGE_DIR.length>0? process.env.BUTTON_PAGE_DIR : "./docs"
+const targetDir = process.env.STORE_DIR && process.env.STORE_DIR.length>0? process.env.STORE_DIR + "/docs"  : "./docs"
 
 export default [{
   input: 'src/index.ts',
